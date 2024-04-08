@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-email-list</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+		<div id="app">
+			<h1>Mails</h1>
+
+            <!-- Fai un ciclo for che crei la lista di mail -->
+            <!-- in ogni li inserisci la singola mail -->
+			<ol>
+				<li v-for="mail in mails">{{ mail }}</li>
+			</ol>
+		</div>
+    
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
