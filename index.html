@@ -16,10 +16,13 @@
             <!-- in ogni li inserisci la singola mail -->
 			<ol>
 				<li 
-                    v-if="mails.length === 10" 
                     v-for="mail in mails"
                 >
+                   <p 
+                    v-if="mails.length === 10" 
+                   >
                     {{ mail }}
+                    </p>
                 </li>
 			</ol>
 		</div>

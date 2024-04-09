@@ -11,7 +11,8 @@ createApp({
         //crea una funzione che cicli(for) per (n) volte generando le mail con axios
 		fetchMails(n) {
 			for (let i = 0; i < n; i++) {
-				axios.get('https://flynn.boolean.careers/exercises/api/random/mail') //usa .then per pushare la mail generata in mails
+				axios
+					.get('https://flynn.boolean.careers/exercises/api/random/mail') //usa .then per pushare la mail generata in mails
 					.then((res) => {
 						this.mails.push(res.data.response)
 					})
